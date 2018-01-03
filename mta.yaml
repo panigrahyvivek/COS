@@ -1,0 +1,13 @@
+ID: cos.mta.demo
+_schema-version: '2.0'
+description: Sample Application in SAP Cloud Platform
+version: 0.0.1
+modules:
+  - name: ui5
+    type: html5
+    path: ui5
+    parameters:
+      disk-quota: 128M
+      memory: 128M
+    build-parameters:
+      builder: grunt
