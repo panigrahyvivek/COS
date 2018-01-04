@@ -11,3 +11,18 @@ modules:
       memory: 128M
     build-parameters:
       builder: grunt
+  - name: service
+    type: java
+    path: service
+    parameters:
+      memory: 128M
+      disk-quota: 128M
+    provides:
+      - name: service_api
+        properties:
+          url: '${default-url}'
+resources:
+  - name: hdi_hanadb
+    properties:
+      hdi-container-name: '${service-name}'
+    type: com.sap.xs.hdi-container

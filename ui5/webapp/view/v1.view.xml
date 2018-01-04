@@ -2,7 +2,14 @@
 	displayBlock="true" xmlns="sap.m">
 	<App id="idAppControl">
 		<pages>
-			<Page title="{i18n>title}">
+			<Page>
+				<customHeader>
+					<Bar>
+						<contentMiddle>
+							<Title text="Hello World"/>
+						</contentMiddle>
+					</Bar>
+				</customHeader>
 				<content></content>
 			</Page>
 		</pages>
